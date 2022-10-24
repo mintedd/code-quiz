@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <main>
+        <!-- top corner, score -->
+        <div>
+            <a href="./score.html">View high scores</a>  
+        </div>
+            <!-- top corner, time -->
+            <div class="timer">Time: <span id="seconds">0</span></div>
+      
+        <div class="start-page" id="intro">
+            <!-- first part of the page when you load webpage -->
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to answer the following code related questions within the time limit. Keep in mind that incorrect
+                answers will penalize your score/time by ten seconds!</p>
+            <button class="start-btn">Start Quiz</button>
+        </div>
+        <!-- this will all be hidden until being quiz button is pressed -->
+        <!-- questions -->
+        <div id="quiz">
+            <h2 class="ask">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum laborum iste perferendis
+                illum dicta facilis pariatur numquam sapiente neque provident culpa veniam, consectetur dolores a
+                adipisci, totam, molestias deleniti nemo.</h2>
+            <div class="answer-choices">
+            </div>
+        </div>
+
+        <!-- all done -->
+        <div id="finish">
+            <!-- final score is -->
+            <h1>All Done!</h1>
+            <p>Your final score is: <span id="final-score"></span></p>
+            <!-- enter initials -->
+            <p>Enter Initials Here
+                <input id="initials" type="text" max="3">
+                <button id="submit-btn">Submit</button>
+            </p>
+        </div>
+
+    </main>
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="./assets/script.js"></script>
+
+</body>
+
+</html>

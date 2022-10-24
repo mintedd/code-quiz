@@ -1,0 +1,38 @@
+#quiz, #finish {
+    display: none;
+    text-align: center;
+}
+
+#intro {
+    text-align: center;
+}
+
+.answer-choices {
+    display: flex;
+    flex-direction: column;
+}
+
+.option1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(166, 85, 241);
+    border-radius: 10px;
+}
+
+.option1:hover {
+background-color: rgb(239, 143, 239);
+}
+
+button {
+    background-color: rgb(166, 85, 241);
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: rgb(239, 143, 239);
+    }
