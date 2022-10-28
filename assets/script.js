@@ -34,7 +34,7 @@ function endgame() {
     $('#quiz').hide();
     $('#finish').show();
     document.querySelector('#final-score').textContent = seconds
-    
+
     // $('.initials').click('submit')
 }
 
@@ -90,25 +90,27 @@ function checkQuestion(event) {
     // }
 
     if (buttonEl.value !== questions[qIndex].answer) {
-               seconds -= 10; //if buttonEl.value == questions[qIndex].answer --> next question         
- 
-     if (seconds <= 0) {
-        seconds = 0;
-    }
+        seconds -= 10; //if buttonEl.value == questions[qIndex].answer --> next question         
 
-    timeEl.textContent = seconds
-    qIndex++;
-      
+        if (seconds <= 0) {
+            seconds = 0;
+        }
+    }
+        timeEl.textContent = seconds
+        qIndex++;
 
     if (seconds <= 0 || qIndex === questions.length) {
-        endgame()
+            endgame()
+        }
+        else {
+            showQuestion()
+        }
     }
-    else {
-        showQuestion()
-    }
-}}
+
 
 answerEl.onclick = checkQuestion
+
+submitButton = document.querySelector('#submit-btn')
 
 // //object for scores 
 // var score = {
@@ -118,7 +120,6 @@ answerEl.onclick = checkQuestion
 
 // var scoreStringify = JSON.stringify(score)
 // localStorage.setItem('score',scoreStringify)
-// submitButton = document.querySelector('#submit-btn')
 
 
 // submitButton.addEventListener('click', function(){
